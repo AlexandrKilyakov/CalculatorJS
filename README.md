@@ -29,7 +29,7 @@ npm i -D eslint eslint_d eslint-config-airbnb eslint-config-prettier eslint-plug
 В консоли можно выполнить следующие команды:
 1. npm run lint - проверяет файлы .js на возможные ошибки.
 2. npm run lint:fix - исправляет файлы .js.
-3. npm run webpack - сборка файлов js в один.
+3. npm run webpack - сборка файлов .js в один.
 4. npm run start - запускает локальный сервер.
 
 Для исправления файлов .css, можно установить плагин Stylefmt. Данные плагин переделывает файл .css по всем правилам, установленным в Stilelint.
