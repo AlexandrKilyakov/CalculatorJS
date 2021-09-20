@@ -1,0 +1,19 @@
+{
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "no-var": "error",
+    "no-tabs": ["error", { allowIndentationTabs: true }],
+    "semi": "error",
+    "indent": ["error", "tab"],
+    "no-multi-spaces": "error",
+    "space-in-parens": "error",
+    "no-multiple-empty-lines": "error",
+    "prefer-const": "error",
+    "no-use-before-define": "error"
+  },
+    "parserOptions": {
+        "sourceType": "module"
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="src/css/style.css">
+	<title>Калькулятор</title>
+</head>
+<body>
+	<div id="mocha"></div>
+	<div class="box container">
+		<div class="box content">
+			<!-- <div class="item text">d</div> -->
+			<div class="item input">
+				<form action="">
+					<input type="text" readonly="" class="text" id="text">
+					<input type="text" readonly="" class="result" id="result">
+				</form>
+			</div>
+			<div class="item circle" id="clean">C</div>
+			<div class="item circle" id="root">&radic;</div>
+			<div class="item circle" id="percentages">%</div>
+			<div class="item circle" id="division">/</div>
+			<div class="item circle" id="seven">7</div>
+			<div class="item circle" id="eight">8</div>
+			<div class="item circle" id="nine">9</div>
+			<div class="item circle" id="multiply">&times;</div>
+			<div class="item circle" id="four">4</div>
+			<div class="item circle" id="five">5</div>
+			<div class="item circle" id="six">6</div>
+			<div class="item circle" id="minus">-</div>
+			<div class="item circle" id="one">1</div>
+			<div class="item circle" id="two">2</div>
+			<div class="item circle" id="three">3</div>
+			<div class="item circle" id="plus">+</div>
+			<div class="item circle" id="two-zeros">00</div>
+			<div class="item circle" id="zero">0</div>
+			<div class="item circle" id="comma">,</div>
+			<div class="item equally" id="answer">=</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+	<script src="https://cdn.rawgit.com/chaijs/chai/3.5.0/chai.js"></script>
+	<script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+	<script>
+		const mocha = window.mocha;
+		mocha.setup('bdd');
+	</script>
+	<script src="dist/main.js"></script>
+	<script>
+		mocha.checkLeaks();
+		mocha.run();
+	</script>
+</body>
+</html>
