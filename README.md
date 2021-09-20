@@ -33,3 +33,11 @@ npm i -D eslint eslint_d eslint-config-airbnb eslint-config-prettier eslint-plug
 4. npm run start - запускает локальный сервер.
 
 Для исправления файлов .css, можно установить плагин Stylefmt. Данные плагин переделывает файл .css по всем правилам, установленным в Stilelint.
+
+Чтобы убрать блок с тестами, нужно в файле style.css, расположенном по пути src/css, удалить комментарий с блока #mocha: 
+
+![image](https://user-images.githubusercontent.com/76633175/133951620-b3095204-71cd-4340-9e37-dd5612ac0cc6.png)
+
+Тесты:
+
+![image](https://user-images.githubusercontent.com/76633175/133951654-bd02e85a-bf8c-44c3-b988-3402a8dec00a.png)
